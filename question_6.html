@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            "WEB PAGE WITH A JAVASCRIPT"
+        </title>
+    </head>
+    <p id="demo"></p>
+    <button onclick="myFunction()">Try it</button>
+            <!--   web page with a javascript to write, “Welcome to my very special page” with a line break between my and very.  -->
+    <body>
+        <script>
+        function myFunction() {
+            var userChoice = prompt("How are you feeling??", "“I’m feeling down,i'm feeling good");
+             if (userChoice =="“I’m feeling down") 
+             {
+                var ans = prompt("answer either yes or no", "");
+                if(ans=="yes")
+                {
+                    document.write("Recognize the signs."+"<br>"+"Take a mental health break."+"<br>"+" Find treatment. "+"<br>"+"Check into workplace services and insurance."+"<br>"+"Take care of your body and mind"+"<br>"+"Reach out to family and friends"+"<br>"+"Be easy on yourself. ")
+                }
+                else if(ans=="n0")
+                       document.write("well good carry on with your work")
+             }
+             else if(userChoice=="i'm feeling good")
+             {
+                 document.write("well corry on with your work")
+             }
+
+}
+        </script>
+    </body>

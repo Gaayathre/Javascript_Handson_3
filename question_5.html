@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <!-- web page that uses the prompt to get the user to input their first name and then their year of birth. Calculate how old they are and write it to the web page  -->
+
+<p>Enter the details in prompt to caluculate your age</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    
+    var person1 = prompt("Enter your year of birth", "2014");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+    if (person1 != null) {
+        age=2018-person1;
+        document.getElementById("demo").innerHTML ="you are    "+age+"    years old";
+        
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- web page with a javascript that writes a paragraph with an image inside of it (so that an image shows up on your page). 5-->
+<h2>Alternative text</h2>
+
+    <p>This looks like an <code>input</code> element:
+
+    <div contenteditable="true">
+      See: <img src="img_chania.jpeg" alt="Flowers in Chania" width="460" height="345">
+    </div>
+    </p>
+    <script>
+    document.querySelector('.selectable-icons').addEventListener('click', function(e) {
+        if (e.target.tagName.toLowerCase() === 'img') {
+          document.querySelector('[contenteditable]').appendChild(e.target.cloneNode(true));
+        }
+      });
+      </script>
+</body>
+</html>

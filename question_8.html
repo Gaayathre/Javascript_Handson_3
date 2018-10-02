@@ -1,0 +1,37 @@
+<!-- Simple sales app: Your web site sells bags of coffee for the Save the Aardvarks Foundation -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter the details in prompt to caluculate your age</p>
+<p> Your web site sells bags of coffee for the Save the Aardvarks Foundation. You sell regular coffee at $9/bag, you sell decaffeinated coffee at $8/bag, and you sell mocha coffee for $11/bag. If the user buys more than $100 worth, they get a $15 discount. Use the prompt to ask the user how many bags of regular coffee s/he wants. Then use the prompt to ask about decaf, and then about mocha. Using the input, calculate the total amount the user will pay. If </p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var bags_decaf = prompt("prompt to ask about decaf", "12");
+    var bags_mocha = prompt("then about mocha", "12");
+    var regular = prompt("then about mocha", "12");
+    if (regular!=null) {
+        total_regular=regular*9;
+    }
+    if (bags_decaf!=null) {
+        total_decaf=bags_decaf*8;
+    }
+    if (bags_mocha!=null) {
+        total_mocha=bags_mocha*11;
+    }
+    total=total_decaf+total_mocha+total_regular;
+    if(total>100)
+    {
+        total=total-15;
+    }
+    document.write(total_regular+"<br>"+total_decaf+"<br>"+total_mocha+"<br>"+total)
+}
+</script>
+
+</body>
+</html>
